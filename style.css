@@ -89,10 +89,19 @@ footer {
   header h1 { font-size: 1.25rem; }
   .container { margin: 1rem; padding: .75rem; }
 }
-/* ===== 红色主题覆盖 ===== */
+/* ===== 全页面改为红色主题（追加到 style.css 最后） ===== */
 :root {
-  --primary: #d62828;
-  --primary-dark: #a61b1b;
-  --bg: #fff5f5;
-  --text: #222222;
+  --primary: #ff0000;
+  --primary-dark: #cc0000;
+  --bg: #ffe5e5;
+  --text: #220000;
+}
+
+body {
+  background: var(--bg);
+}
+
+.container {
+  background: #fff5f5;
+  border: 1px solid #ffcccc;
 }
