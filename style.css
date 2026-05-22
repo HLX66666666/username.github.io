@@ -89,19 +89,54 @@ footer {
   header h1 { font-size: 1.25rem; }
   .container { margin: 1rem; padding: .75rem; }
 }
-/* ===== 全页面改为红色主题（追加到 style.css 最后） ===== */
+/* ===== Red Theme Override ===== */
 :root {
-  --primary: #ff0000;
-  --primary-dark: #cc0000;
+  --primary: #d60000;
+  --primary-dark: #a80000;
   --bg: #ffe5e5;
   --text: #220000;
 }
 
+/* 页面整体背景 */
 body {
-  background: var(--bg);
+  background: linear-gradient(to bottom, #ffebeb, #ffd6d6);
+  color: var(--text);
 }
 
+/* 主内容区域 */
 .container {
-  background: #fff5f5;
-  border: 1px solid #ffcccc;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(214, 0, 0, 0.15);
+}
+
+/* 输入框保持可见且不被遮挡 */
+input,
+textarea {
+  background: #fff;
+  color: #220000;
+  border: 1px solid #cc6666;
+}
+
+/* 导航栏 */
+nav {
+  background: var(--primary-dark);
+}
+
+/* Header */
+header {
+  background: var(--primary);
+}
+
+/* 按钮 */
+button {
+  background: var(--primary);
+}
+
+button:hover {
+  background: var(--primary-dark);
+}
+
+/* 链接颜色 */
+a {
+  color: #b30000;
 }
