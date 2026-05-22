@@ -140,3 +140,29 @@ button:hover {
 a {
   color: #b30000;
 }
+/* ===== Container Text Fix ===== */
+.container,
+.container p,
+.container li,
+.container h1,
+.container h2,
+.container h3,
+.container strong,
+.container label,
+.container a {
+  color: #000 !important;
+  background: transparent !important;
+}
+
+/* 去掉被选中一样的蓝底 */
+.container *::selection {
+  background: #ff9999;
+  color: #000;
+}
+
+/* 输入框文字 */
+input,
+textarea {
+  color: #000 !important;
+  background: #fff !important;
+}
