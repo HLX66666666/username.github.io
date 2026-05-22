@@ -89,7 +89,10 @@ footer {
   header h1 { font-size: 1.25rem; }
   .container { margin: 1rem; padding: .75rem; }
 }
-body {
-  background-color: red;
-  color: white;
+/* ===== 红色主题覆盖 ===== */
+:root {
+  --primary: #d62828;
+  --primary-dark: #a61b1b;
+  --bg: #fff5f5;
+  --text: #222222;
 }
